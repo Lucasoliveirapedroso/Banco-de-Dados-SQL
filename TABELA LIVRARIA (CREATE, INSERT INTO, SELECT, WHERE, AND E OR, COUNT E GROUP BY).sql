@@ -123,7 +123,33 @@ OR UF ='RJ';
 | Celia Tavares  | F    | RJ   |
 | Eduardo Santos | M    | RJ   |
 | Eduardo Santos | M    | RJ   |
-+----------------+------+------+	
++----------------+------+------+
+
+SELECT AUTOR, SEXO, UF
+FROM LIVROS
+WHERE 
+SEXO = 'M' AND (UF = 'SP' OR UF = 'RJ');
+
++----------------+------+------+
+| AUTOR          | SEXO | UF   |
++----------------+------+------+
+| João Nunes     | M    | SP   |
+| Eduardo Santos | M    | RJ   |
+| Eduardo Santos | M    | RJ   |
++----------------+------+------+
+
+SELECT AUTOR, SEXO, UF
+FROM LIVROS
+WHERE SEXO = 'M'
+AND UF = 'SP'
+AND paginas > 100;
+
+
++-------------+------+------+
+| AUTOR       | SEXO | UF   |
++-------------+------+------+
+| João Nunes  | M    | SP   |
++-------------+------+------+
 
 --TODAS AS CONDIÇÕES PRECISAM SER VERDADEIRAS
 	
