@@ -400,6 +400,37 @@ ON C.IDCLIENTE = E.ID_CLIENTE
 INNER JOIN TELEFONE T
 ON C.IDCLIENTE = T.ID_CLIENTE;  
 
++---------+------+------------+----------------+------+------------+
+| NOME    | SEXO | BAIRRO     | CIDADE         | TIPO | NUMERO     |
++---------+------+------------+----------------+------+------------+
+| LUCAS   | M    | PAULISTA   | COLOMBO        | CEL  | 9856585471 |
+| LUCAS   | M    | PAULISTA   | COLOMBO        | CEL  | 9856585472 |
+| ANA     | F    | PAULISTA   | COLOMBO        | CEL  | 9856585473 |
+| ANA     | F    | PAULISTA   | COLOMBO        | CEL  | 9856585470 |
+| PAULO   | M    | PAULISTA   | COLOMBO        | CEL  | 9856585475 |
+| MATT    | M    | PAULISTA   | COLOMBO        | CEL  | 9856585476 |
+| MATT    | M    | PAULISTA   | COLOMBO        | CEL  | 9856585479 |
+| FRAN    | F    | PAULISTA   | COLOMBO        | CEL  | 9856585474 |
+| FRAN    | F    | PAULISTA   | COLOMBO        | CEL  | 9856585474 |
+| JOAO    | M    | PAULISTA   | COLOMBO        | CEL  | 9856585478 |
+| JORGE   | M    | PAULISTA   | COLOMBO        | CEL  | 9856585477 |
+| ANDRE   | M    | CASCADURA  | B. HORIZONTE   | RES  | 68976565   |
+| ANDRE   | M    | CASCADURA  | B. HORIZONTE   | CEL  | 99656675   |
+| KARLA   | F    | CENTRO     | RIO DE JANEIRO | CEL  | 33567765   |
+| KARLA   | F    | CENTRO     | RIO DE JANEIRO | CEL  | 88668786   |
+| KARLA   | F    | CENTRO     | RIO DE JANEIRO | COM  | 55689654   |
+| DANIELE | F    | COPACABANA | RIO DE JANEIRO | COM  | 88687979   |
+| LORENA  | F    | CENTRO     | VITORIA        | COM  | 88965676   |
+| ANTONIO | M    | CENTRO     | CURITIBA       | CEL  | 89966809   |
+| ANTONIO | M    | JARDINS    | SAO PAULO      | COM  | 88679978   |
+| ELAINE  | F    | BOM RETIRO | CURITIBA       | CEL  | 99655768   |
+| CARMEM  | F    | LAPA       | SAO PAULO      | RES  | 89955665   |
+| ADRIANA | F    | CENTRO     | RIO DE JANEIRO | RES  | 77455786   |
+| ADRIANA | F    | CENTRO     | RIO DE JANEIRO | RES  | 89766554   |
+| JOICE   | F    | CENTRO     | RIO DE JANEIRO | RES  | 77755785   |
+| JOICE   | F    | CENTRO     | RIO DE JANEIRO | COM  | 44522578   |
++---------+------+------------+----------------+------+------------+
+
 
 
 /* DEFINIÇÃO DE LINGUAGEM */

@@ -118,6 +118,17 @@ AND ESTADO = 'RJ'
 AND TIPO != 'CEL';
 
 
++-----------+---------+-------------------+------+--------+--------+------+
+| IDCLIENTE | NOME    | EMAIL             | SEXO | BAIRRO | ESTADO | TIPO |
++-----------+---------+-------------------+------+--------+--------+------+
+|        11 | KARLA   | KARLA@GMAIL.COM   | F    | CENTRO | RJ     | COM  |
+|        19 | ADRIANA | ADRIANA@GMAIL.COM | F    | CENTRO | RJ     | RES  |
+|        19 | ADRIANA | ADRIANA@GMAIL.COM | F    | CENTRO | RJ     | RES  |
+|        20 | JOICE   | JOICE@GMAIL.COM   | F    | CENTRO | RJ     | RES  |
+|        20 | JOICE   | JOICE@GMAIL.COM   | F    | CENTRO | RJ     | COM  |
++-----------+---------+-------------------+------+--------+--------+------+
+
+
 -- CAMPANHA DE MKT QUER UMA LISTA COM NOME, EMAIL, TELEFONE CELULAR QUE MORAM NO RJ 
 
 SELECT C.NOME, C.EMAIL, T.NUMERO AS CELULAR
@@ -128,6 +139,14 @@ INNER JOIN TELEFONE T
 ON C.IDCLIENTE = T.ID_CLIENTE
 WHERE TIPO = 'CEL'
 AND ESTADO = 'RJ';
+
++-------+-----------------+------------+
+| NOME  | EMAIL           | CELULAR    |
++-------+-----------------+------------+
+| PAULO | PAULO@GMAIL.COM | 9856585475 |
+| KARLA | KARLA@GMAIL.COM | 33567765   |
+| KARLA | KARLA@GMAIL.COM | 88668786   |
++-------+-----------------+------------+
 
 
 -- CAMPANHA DE MKT QUER UMA LISTA COM NOME, EMAIL, TELEFONE CELULAR DAS MULHRES QUE MORAM EM SP
@@ -140,3 +159,11 @@ INNER JOIN TELEFONE T
 ON C.IDCLIENTE = T.ID_CLIENTE
 WHERE SEXO = 'F'
 AND ESTADO = 'SP';
+
++--------+----------------+------------+
+| NOME   | EMAIL          | CELULAR    |
++--------+----------------+------------+
+| ANA    | ANA1@GMAIL.COM | 9856585473 |
+| ANA    | ANA1@GMAIL.COM | 9856585470 |
+| CARMEM | CARMEM@IG.COM  | 89955665   |
++--------+----------------+------------+
