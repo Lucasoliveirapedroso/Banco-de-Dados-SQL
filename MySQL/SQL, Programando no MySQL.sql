@@ -62,6 +62,3 @@ CALL CONTA(1,2)$
 +-------+
 |     3 |
 +-------+
-
---PROCEDURES NO MUNDO REAL
-
